@@ -1,0 +1,186 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url("./assets/images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    min-height: 100vh;
+  
+  box-sizing: border-box;
+    
+   }
+
+   @font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('assets/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+h1 {
+    font-family: 'Roboto';
+    color: #DBDEE6;
+    font-size: 45px;
+    font-weight: 700;
+    
+}
+
+.para {
+    font-family: 'Roboto';
+    color: #919499;
+    font-size: 20px;
+    margin-top: -5px;
+    font-weight: 400;
+}
+
+input {
+    border: 1px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #919499;
+    background: transparent;
+    margin-right: 10px;
+    outline: none;
+    overflow: visible;
+    width: 280px;
+    height: 33px;
+    caret-color: #919499;
+    text-indent: 10px;
+    
+    
+}
+
+input[type=email]:focus {
+    border: 1px solid #1cb495;
+    outline: none;
+    color: #919499;
+  }
+
+  input[type="email"]::placeholder {  
+    text-align: left;
+    text-indent: 10px; 
+    
+}
+
+form button {
+    background-color: #1cb495;
+    color: #DBDEE6;
+    border-radius: 6px;
+    border-style: none;
+    padding: 10px 15px 10px 15px;
+    font-family:'Roboto';
+    font-weight: bold;
+    
+    
+}
+button:hover {
+    background-color: #21c5a4;
+  }
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+.link {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    color: #919499;
+}
+
+.link:hover {
+    color: #21c5a4;
+  }
+
+
+p {
+    color: rgba(255,255,255,0.5);
+    font-size: small;
+}
+
+.other-links:hover {
+    color: #21c5a4;
+}
+
+a {
+    text-decoration: none;
+    color: #919499;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 170px;
+    font-size: 24px;
+}
+
+i:hover {
+    color: #21c5a4;
+}
+
+.fotter {
+    margin-top: 200px;
+    margin-left: 35px;
+    
+}
+
+main {
+    margin-left: 35px;
+    
+        
+}
+
+.test {
+    
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 480px) {
+    .test {
+    
+        align-self: center;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .para {
+        font-size: 15px;
+    }
+
+    main {
+        margin-left: 3;
+        width: 300px;
+        margin-left: 20px;
+        
+    }
+    input {
+        width: 290px;
+    }
+    button {
+        margin-top: 20px;
+        width: 290px;
+    }
+    .fotter {
+        margin-left: 20px;
+    }
+
+  }
